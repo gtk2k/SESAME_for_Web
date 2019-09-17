@@ -1,6 +1,9 @@
 # 開けゴマ！ for Web
 Web Bluetooth API と WebUSB API を使ってブラウザーからBluetooth接続でSESAMEをコントロールするというものです。
 
+# はじめに
+この「開けゴマ！ for Web」は、Root化したAndroidを使用してパスワードを取得して、そのパスワードを使って開錠するというハードルが高いものとなっております。申し訳ございません。詳しくは ode (@odetarou) さんの[SESAMEハック記事](https://qiita.com/odetarou/items/9628d66d4d94290b5f2d)を見てください。
+
 # Special Thanx!!
 ode (@odetarou) さん  
 べあのはし (@@beahashy) さん  
