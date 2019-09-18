@@ -9,6 +9,9 @@ ode (@odetarou) さん
 べあのはし (@@beahashy) さん  
 O. TOBE as わーぷ (@warp185) さん  
 
+# PaSoRi
+WindowsでPaSoRiをWebUSBで認識させるには[Zadig](https://zadig.akeo.ie/)をつかってドライバーをWinUSBに切り替える必要があります。
+
 # きっかけ
 ode (@odetarou) さんが、Bluetooth をハックして実装中という[ツイート](https://twitter.com/odetarou/status/1150098558328041472)を拝見したのおおもとのきっかけでした。  
 その後、SESAMEハックの[記事](https://qiita.com/odetarou/items/9628d66d4d94290b5f2d)を書かれており、Node.js のソースも載せてありましたので、これなら Web Bluetooth API でも行けるんじゃね？ということで実装しました。ですのでこれは、ode さんのプロジェクトのWeb移植版
