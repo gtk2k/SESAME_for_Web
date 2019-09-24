@@ -12,13 +12,8 @@ btnConnect.onclick = async _ => {
             sesame = new Sesame({
                 macData: Utils.toBin(txtMacAddr.value).reverse(),
                 password: txtPassword.value,
-                userId: 'tanaka.kenji@synamon.jp'
+                userId: txtUserId.value
             });
-            // sesame = new Sesame({
-            //     macData: [0x5f, 0x7f, 0x60, 0x15, 0xfe, 0xf5],
-            //     password: '0E39C9B3FB514825BE3C9F315764FFD0665EED28700842488ADF7DEC52FDEE96',
-            //     userId: 'tanaka.kenji@synamon.jp'
-            // });
 
             pasori = new Pasori({
                 onIdmReceived: async idm => {
@@ -30,10 +25,10 @@ btnConnect.onclick = async _ => {
                     }, 10000);
                 }
             });
+
             await pasori.requestDevice();
             await sesame.requestDevice();
             await pasori.connect();
-            // await sesame.connect();
             await pasori.polling();
         } else {
             dispMsg.textContent = 'MACアドレス、パスワードが正しくありません';
